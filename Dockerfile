@@ -12,3 +12,12 @@ COPY --from=builder /root/.local /root/.local
 WORKDIR /app
 # Copy files
 COPY . /app
+
+#intall git
+RUN apt-get update && apt-get -y upgrade \
+  && apt-get install -y --no-install-recommends \
+    git
+
+#git settings (password is personal token created from github website, will expired and need to be updated)
+RUN git config --global user.name aujjh521 \
+  && git config --global user.email aujjh521@gmail.com

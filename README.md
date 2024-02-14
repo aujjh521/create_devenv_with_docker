@@ -15,3 +15,7 @@
 
 4. 在vscode連進去的container環境中打開jupyterlab: python -m jupyterlab --no-browser --ip=0.0.0.0 --allow-root
 
+注意
+1. 在container裡面要做git操作業額外安裝git
+2. 在container裡面要做git push的時候, 帳號是用原本的git帳號, 但密碼要去github網站上面產生personal token
+
