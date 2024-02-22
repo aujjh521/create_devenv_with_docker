@@ -29,9 +29,17 @@ scikit-learn==1.4.0
 scipy==1.12.0
 six==1.16.0
 threadpoolctl==3.0.0
-torch==1.11.0
-torchaudio==0.11.0
-torchvision==0.12.0
+#torch==1.11.0
+#torchaudio==0.11.0
+#torchvision==0.12.0
+#pip3 install torch==1.13.1+cu117 torchvision>=0.13.1+cu117 torchaudio>=0.13.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117 --no-cache-dir 
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.13.1+cu117
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torchvision>=0.13.1+cu117
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torchaudio>=0.13.1+cu117
+#--extra-index-url https://download.pytorch.org/whl/cu117 --no-cache-dir 
 typing_extensions==4.1.1
 urllib3==1.26.13
 Werkzeug==2.0.2
