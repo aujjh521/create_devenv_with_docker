@@ -21,6 +21,7 @@ RUN apt-get update && apt-get -y upgrade \
     wget \
     g++ \
     ca-certificates \
+    htop \
     && rm -rf /var/lib/apt/lists/*
 ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
