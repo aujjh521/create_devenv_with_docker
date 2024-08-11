@@ -16,7 +16,8 @@ COPY . /app
 #intall git
 RUN apt-get update && apt-get -y upgrade \
   && apt-get install -y --no-install-recommends \
-    git
+    git \
+    htop
 
 #git settings (password is personal token created from github website, will expired and need to be updated)
 RUN git config --global user.name aujjh521 \
